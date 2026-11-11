@@ -1,0 +1,86 @@
+
+# ==========================================
+# Environment variables and secrets
+# ==========================================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ==========================================
+# Python virtual environments
+# ==========================================
+venv/
+.venv/
+env/
+ENV/
+
+# ==========================================
+# Python cache and compiled files
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ==========================================
+# IDE and editor files
+# ==========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# ==========================================
+# Logs
+# ==========================================
+logs/*
+!logs/.gitkeep
+*.log
+
+# ==========================================
+# Temporary API data and local datasets
+# ==========================================
+data/raw/
+data/processed/
+data/temp/
+*.json.tmp
+*.csv.tmp
+
+# ==========================================
+# Database backups and local database files
+# ==========================================
+*.sql.gz
+*.dump
+*.bak
+*.sqlite
+*.db
+
+# ==========================================
+# dbt generated artifacts
+# ==========================================
+dbt_project/target/
+dbt_project/dbt_packages/
+dbt_project/logs/
+dbt_project/profiles.yml
+
+# ==========================================
+# Airflow generated files
+# ==========================================
+airflow/logs/
+airflow/plugins/__pycache__/
+airflow.cfg
+airflow.db
+airflow-webserver.pid
+
+# ==========================================
+# Docker and container-generated files
+# ==========================================
+*.pid
