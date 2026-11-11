@@ -1,0 +1,27 @@
+#Project Checklist
+Infrastructure
+[ ] Docker Compose starts PostgreSQL successfully
+[ ] Database credentials are kept out of GitHub
+[ ] Setup works from a clean checkout
+
+Ingestion
+[ ] All four API resources can be extracted
+[ ] Pagination and API errors are handled
+[ ] Raw payloads and batch metadata are retained
+
+Warehouse
+[ ] Nested cart items are flattened correctly
+[ ] Fact table grains and relationships are documented
+[ ] dbt models build successfully
+
+Quality
+[ ] Unique and not-null tests run
+[ ] Referential integrity is tested
+[ ] Cart totals are reconciled
+[ ] At least one unit test covers a failure case
+
+Portfolio
+[ ] README includes an architecture diagram
+[ ] Data dictionary explains key columns
+[ ] Example SQL queries and test results are included
+[ ] Limitations of the mock data are disclosed
