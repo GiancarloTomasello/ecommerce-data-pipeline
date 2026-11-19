@@ -2,7 +2,7 @@ import json
 
 def extract_Products(api_client):
     #Call API Client to get all products
-    products = api_client.call_request("GET", "https://dummyjson.com/products", 10, 0)
+    products = api_client.call_request("GET", "https://dummyjson.com/products", {"limit":0})
     
     #Save the retuned data to a JSON file
     with open("../data/raw/products.json", "w", encoding="utf-8") as file:

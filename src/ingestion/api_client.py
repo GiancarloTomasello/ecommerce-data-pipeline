@@ -22,9 +22,9 @@ class ApiClient:
         logging.basicConfig(format='%(levelname)s:%(message)s',filename='ApiClient.log', filemode='w', level=logging.DEBUG)
         self.logger.info('Started')
 
-    def call_request(self, ReqType="Get", url="", limit=30, skip=0,timeoutTime = 10):
+    def call_request(self, ReqType="Get", url="", params={},timeoutTime = 10):
 
-        req = Request(ReqType, url, params={"limit":limit, "skip":skip})
+        req = Request(ReqType, url, params=params)
         prepped = self.s.prepare_request(req)
         print(prepped.url)
 
