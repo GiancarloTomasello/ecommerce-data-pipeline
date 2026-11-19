@@ -1,6 +1,9 @@
 from ingestion.api_client import ApiClient
+from ingestion.extract_products import extract_Products
+import json
 
 
 client = ApiClient()
-resp = client.call_request("Get", 'https://api.github.com/events', 5)
-print(resp.status_code)
+
+products = extract_Products(client)
+#print(products)
